@@ -7,8 +7,8 @@
 print("숫자를 입력해 주세요! \n" + "입력 : ")
 a = int(input())
 # i = 1
-# while a >= i:
+# while a >= i :
 i = 0
-while i < a:
+while i < a :
     print(a)
     i += 1

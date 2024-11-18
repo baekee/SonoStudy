@@ -8,4 +8,4 @@ i = 0
 while i < num:
     i += 1
     # print(str(i) + " " + str(i**2))
-    print(i, i*i)
+    print(i, i * i)

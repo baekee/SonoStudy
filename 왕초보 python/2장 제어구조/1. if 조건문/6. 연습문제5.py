@@ -5,6 +5,7 @@
 # 3. 서력 기원 연수가 4, 100, 400으로 나누어 떨어지는 해는 윤년으로 둔다. (2000년, 2400년...)
 #
 # 규칙에 따라, 연도를 나타내는 정수를 입력으로 받아서 윤년인지 아닌지 출력하는 프로그램을 작성해 보세요.
+import calendar
 
 year = int(input('정수 연도를 입력하시오. \n' + '입력 : '))
 tf = None
@@ -15,6 +16,15 @@ else :
     tf = False
 
 if tf == True :
+    print(f'출력년도 {year}는 윤년입니다.')
+else :
+    print(f'출력년도 {year}는 평년입니다.')
+
+
+# 모듈 이용하기
+year = int(input('정수 연도를 입력하시오. \n' + '입력 : '))
+
+if calendar.isleap(year) == True :
     print(f'출력년도 {year}는 윤년입니다.')
 else :
     print(f'출력년도 {year}는 평년입니다.')
